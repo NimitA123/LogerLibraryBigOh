@@ -37,8 +37,8 @@ afterEvaluate {
                 from components.release
 
                 groupId = 'com.github.NimitA123'
-                artifactId = 'library'
-                version = '1.1'
+                artifactId = 'logerlibrary'
+                version = '0.0.0'
             }
         }
     }
