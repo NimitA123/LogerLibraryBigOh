@@ -12,6 +12,7 @@ class MyPersonalApp : Application() {
      */
     override fun onCreate() {
         super.onCreate()
+
         if (isExternalStorageWritable) {
             val appDirectory =
                 File(Environment.getExternalStorageDirectory().toString() + "/MyPersonalAppFolder")
