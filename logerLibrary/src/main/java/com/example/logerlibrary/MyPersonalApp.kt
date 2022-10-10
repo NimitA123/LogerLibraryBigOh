@@ -1,4 +1,4 @@
-package com.example.logerbigoh
+package com.example.logerlibrary
 
 import android.app.Application
 import android.os.Environment
