@@ -1,8 +1,9 @@
 package com.example.logerbigoh
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.logerlibrary.MyPersonalApp
+import com.example.logerlibrary.MainActivity
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -10,5 +11,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
       /*  var myPersonalApp = MyPersonalApp()
         myPersonalApp.onCreate()*/
+        var intent = Intent(this,  MainActivity::class.java)
+        startActivity(intent)
     }
 }
