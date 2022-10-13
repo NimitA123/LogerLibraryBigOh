@@ -8,7 +8,7 @@ import java.io.File
 import java.io.IOException
 import java.util.concurrent.TimeUnit
 
-class MainActivity : AppCompatActivity() {
+class LogerActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
