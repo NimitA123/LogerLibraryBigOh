@@ -38,7 +38,7 @@ afterEvaluate {
 
                 groupId = 'com.github.NimitA123'
                 artifactId = 'LogerLibraryBigOh'
-                version = '1.0.1'
+                version = '1.0.5'
             }
         }
     }

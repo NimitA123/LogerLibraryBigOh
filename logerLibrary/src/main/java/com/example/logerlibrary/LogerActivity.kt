@@ -9,6 +9,7 @@ import java.io.IOException
 import java.util.concurrent.TimeUnit
 
 class LogerActivity : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -26,7 +27,7 @@ class LogerActivity : AppCompatActivity() {
           val logDirectory =this.getExternalFilesDir("dir")?.path + File.separator
 
 
-            val logFile = File(logDirectory, "logcat_" + ".txt")
+          val  logFile = File(logDirectory, "logcat_" +  ".txt")
 
 
             // create log folder
@@ -41,8 +42,9 @@ class LogerActivity : AppCompatActivity() {
                 Log.d("nimit", "onCreate: ${System.currentTimeMillis()}")
             }
             // TODO file creation time is more than two days than delete file
+
             if(logFile.exists()){
-                if(currentMinute - logDirectoryCreationTimeInMinute >= 2880){
+                if(currentMinute - logDirectoryCreationTimeInMinute >= 3){
                     logFile.delete()
                 }
             }
@@ -61,6 +63,8 @@ class LogerActivity : AppCompatActivity() {
         }
 
     }
+
+
     private val isExternalStorageWritable: Boolean
         get() {
             val state = Environment.getExternalStorageState()
